@@ -19,16 +19,25 @@
   .gh{
      padding:20px;padding-left:350px;padding-right:350px;
      padding-top: 25px;
-     opacity: 70%;
   }
   #body{
-   background: url(/static/img/login.jpg);
+   background: url(/static/img/bg.jpg);
    background-size: 100%;
    background-repeat: no-repeat;
    
   }
   div{
       border-radius: 10px;
+      
+  }
+  .op{
+    margin-bottom: 0px;
+    opacity: 0.7;
+    color: black;
+    background: beige; 
+  }
+  .heading{
+    padding-top: 15px;
   }
   </style>
  
@@ -36,11 +45,11 @@
 </head>
 
 <body class="container gh" id="body">
-<span class="badge badge-pill badge-light" style="margin-left: 24%; margin-bottom: 25px;"><h5>Smart AgrotTech System</h5></span>
-<div class="panel" style="padding-bottom:20px;" id="home">
+<div class="panel op" id="home">
 <center>
-    
-    <form id="login_form" action="#" method="post" >
+  
+    <h4 class="heading">Smart AgrotTech System</h4>
+    <form id="login_form" action="#" method="post">
     <input class="btn btn-info" type="button" value="Login" id="login" style="margin-top: 15px;">
     <input class="btn btn-info" type="button" value="Signup" id="signup" style="margin-top: 15px;">
     </form>
@@ -51,7 +60,7 @@
     <div class="input1">
         <input type="password" id="password" pattern={a-zA-Z0-9}{6,} class="form-control" placeholder="Password" required="required"/>
     </div>
-    <input class="btn btn-primary" type="submit" value="Submit" id="submit"/>
+    <input class="btn btn-primary" type="submit" value="Submit" id="submit" style="margin-bottom: 15px;"/>
     </form>
     </div>
     
@@ -60,7 +69,7 @@
 
 
 
-<div id="signup_div" class="panel" style="padding-bottom:90px;">
+<div id="signup_div" class="panel op" style="padding-bottom:15px;">
 
 <form>
  <table align="center" style="padding-top:100px;">
